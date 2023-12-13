@@ -1,3 +1,4 @@
-option{
-    font-size: 300px;
+#Map-holder{
+    height: 500px;
+    background-color: rgb(40, 42, 42);
 }

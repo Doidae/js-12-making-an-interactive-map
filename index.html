@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Map</title>
-    <link rel="style" href="style.css">
-    <link rel="js" href="main.js">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <div>
@@ -16,8 +19,12 @@
             <option value="option3">Hotel</option>
             <option value="option4">Market</option>
         </select>
-
+        
         <button onclick="getSelectedOption()">Find</button>
+    </div>
+    <div id="Map-holder">
+        <!-- Hold the map here -->
+
     </div>
 </body>
 </html>
