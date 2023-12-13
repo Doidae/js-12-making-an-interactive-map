@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive Map</title>
     <link rel="style" href="style.css">
     <link rel="js" href="main.js">
 </head>
 <body>
-    
+    <div>
+        <label for="options">Select an option:</label>
+        <select id="options">
+            <option value="option1">Coffee</option>
+            <option value="option2">Restaurant</option>
+            <option value="option3">Hotel</option>
+            <option value="option4">Market</option>
+        </select>
+
+        <button onclick="getSelectedOption()">Find</button>
+    </div>
 </body>
 </html>
