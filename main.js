@@ -29,23 +29,16 @@ marker.bindPopup("<b>Hello World! </b><br>I am a popup.").openPopup();
 
 
 
+// Turned the previoous getLocation into an async function
+async function getLocation(){
+    let currentPos = await new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve,reject)
+    })
+} 
 
-const getLocation = () => {
 
-    const status = document.querySelector('.status');
-
-    const success = (position) => {
-        console.log(position);
-        const longitude = position.coords.longitude;
-        const latitude = position.coords.latitude;
-        console.log(latitude, longitude)
-        }
-
-    const error = () => {
-        status.textContent = "No location granted";
-    }
-    navigator.geolocation.getCurrentPosition(success,error)
-    }
 document.querySelector('.findLocation').addEventListener('click',getLocation)
+
+
 // foursquare?
 //
